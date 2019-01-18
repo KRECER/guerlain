@@ -33,7 +33,7 @@ gulp.task('server', function() {
 	gulp.watch('source/scss/**/*.scss', gulp.series('style') );
 	gulp.watch('source/js/**/*.js', gulp.series('script') );
 	gulp.watch('source/img/**/*.{png,jpg}', gulp.series('images') );
-	gulp.watch('source/img/**/*.svg', gulp.series('sprite') );
+	gulp.watch('source/img/**/icon-*.svg', gulp.series('sprite') );
 });
 
 gulp.task('html', () => {
@@ -77,7 +77,7 @@ gulp.task('style', () => {
 });
 
 gulp.task('sprite', () => {
-	return gulp.src('source/img/**/*.svg')
+	return gulp.src('source/img/**/icon-*.svg')
 		.pipe(svgstore({ inlineSvg: true }))
 		.pipe(cheerio({
 				run: function ($) {

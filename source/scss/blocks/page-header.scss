@@ -1,0 +1,138 @@
+//Mobile first
+
+.page-header {
+  height: 100%;
+
+  background-image: url("../img/page-header__bg--mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #000;
+}
+
+.page-header__logo {
+  display: none;
+
+  text-align: center;
+}
+
+.page-header__inner {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 65px;
+}
+
+.page-header__content {
+  padding: 70px 45px;
+
+  text-align: center;
+}
+
+.page-header__title {
+  position: relative;
+
+  padding-bottom: 20px;
+
+  color: #e2ad61;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+
+    width: 133px;
+    height: 1px;
+
+    background-color: #E2AD61;
+  }
+}
+
+.page-header__description {
+  margin-bottom: 30px;
+
+  font-size: 14px;
+}
+
+.page-header__text {
+  margin-bottom: 80px;
+
+  font-size: 14px;
+}
+
+.page-header__facebook {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 1px solid #C59754;
+
+  svg {
+    fill: #E2AD61;
+  }
+}
+
+// Tablet
+@media (min-width: 768px) {
+  .page-header {
+    background-image: url("../img/page-header__bg--tablet.jpg");
+  }
+
+  .page-header__inner {
+    width: 633px;
+    padding-top: 160px;
+  }
+
+  .page-header__content {
+    padding: 200px 100px;
+    padding-bottom: 0;
+  }
+
+  .page-header__title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .page-header__description {
+    margin-bottom: 20px;
+  }
+
+  .page-header__text {
+    margin-bottom: 25px;
+  }
+
+  .page-header__logo {
+    display: block;
+
+    margin-bottom: 25px;
+  }
+}
+
+// Desktop
+@media (min-width: 1280px) {
+  .page-header {
+    background-image: url("../img/page-header__bg--desktop.jpg");
+  }
+
+  .page-header__inner {
+    width: 1170px;
+    padding-top: 45px;
+  }
+
+  .page-header__content {
+    padding: 100px 400px;
+    padding-bottom: 0;
+  }
+
+  .page-header__text {
+    margin-bottom: 20px;
+  }
+}

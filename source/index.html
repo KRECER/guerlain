@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +8,28 @@
 	<link rel="stylesheet" href="css/style-min.css">
 </head>
 <body>
-	<div class="visuallyhidden">
+	<div class="visually-hidden">
 		<include src="build/img/sprite.svg"></include>
 	</div>
-	<svg width="100" height="100">
-		<use xlink:href="#icon-vk"></use>
-	</svg>
-	<script src="js/main-min.js"></script>
+	<header class="page-header">
+		<div class="page-header__inner">
+			<div class="logo">
+				<img src="img/logo.svg" width="149" height="19" alt="logotype">
+			</div>
+			<div class="page-header__content">
+				<h1 class="page-header__title">Cайт <br> вдосконалюється</h1>
+				<p class="page-header__description">У світі Guerlain все підпорядковано невтомненому прагненню до Прекрасного. З 1828 року ми досліджуємо, винаходимо, вдосконалюємо. Зараз ми вдосконалюємо сайт.</p>
+				<p class="page-header__text">Слідкуйте за нашими новинами у facebook. До зустрічі!</p>
+				<div class="page-header__logo">
+					<img src="img/logo.svg" width="123" height="15" alt="logotype">
+				</div>
+				<a class="page-header__facebook" href="#" target="_blank">
+					<svg width="10" height="18">
+						<use xlink:href="#icon-facebook"></use>
+					</svg>
+				</a>
+			</div>
+		</div>
+	</header>
 </body>
 </html>
